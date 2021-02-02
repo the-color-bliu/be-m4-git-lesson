@@ -56,6 +56,9 @@ Rails.application.routes.draw do
   get '/categories', to: 'categories#index'
   get '/:category',  to: 'categories#show', param: :slug, as: "category"
 
+  # example
+  resources :example, to: [:index]
+
 
   # RESOURCES -> previously:
 
